@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Layanan Internet Terisolir - GMJN</title>
+  <meta name="description" content="Pemberitahuan layanan internet terisolir otomatis oleh sistem billing." />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #ffffff;
+      color: #111111;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .page {
+      width: 100%;
+      max-width: 760px;
+      min-height: 520px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      border: 1px solid #e5e7eb;
+      border-radius: 18px;
+      padding: 44px 28px;
+      background: #ffffff;
+      box-shadow: 0 18px 50px rgba(0, 0, 0, 0.08);
+    }
+
+    .content {
+      width: 100%;
+      max-width: 650px;
+    }
+
+    .title {
+      font-size: clamp(28px, 5vw, 48px);
+      line-height: 1.15;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      margin: 0 0 26px;
+      text-transform: uppercase;
+    }
+
+    .icon {
+      font-size: clamp(58px, 12vw, 100px);
+      line-height: 1;
+      margin: 8px 0 30px;
+    }
+
+    .notice {
+      font-size: clamp(20px, 4vw, 34px);
+      line-height: 1.35;
+      font-weight: 800;
+      margin: 0 0 34px;
+      text-transform: uppercase;
+    }
+
+    .notice .red {
+      color: #d00000;
+      font-weight: 900;
+    }
+
+    .message {
+      font-size: clamp(18px, 3.3vw, 30px);
+      line-height: 1.45;
+      font-weight: 700;
+      margin: 0 0 30px;
+      text-transform: uppercase;
+    }
+
+    .help {
+      font-size: clamp(16px, 2.8vw, 24px);
+      line-height: 1.5;
+      font-weight: 700;
+      margin: 0 0 44px;
+      text-transform: uppercase;
+    }
+
+    .footer {
+      font-size: clamp(14px, 2.3vw, 20px);
+      line-height: 1.4;
+      font-weight: 800;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+      color: #222222;
+    }
+
+    .footer span {
+      display: block;
+      font-size: 0.88em;
+      font-weight: 700;
+      margin-top: 4px;
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 12px;
+      }
+
+      .page {
+        min-height: calc(100vh - 24px);
+        padding: 34px 18px;
+        border-radius: 12px;
+      }
+
+      .title {
+        margin-bottom: 22px;
+      }
+
+      .icon {
+        margin-bottom: 26px;
+      }
+
+      .notice {
+        margin-bottom: 30px;
+      }
+
+      .message {
+        margin-bottom: 26px;
+      }
+
+      .help {
+        margin-bottom: 38px;
+      }
+    }
+
+    @media print {
+      body {
+        padding: 0;
+      }
+
+      .page {
+        box-shadow: none;
+        border: none;
+        border-radius: 0;
+        min-height: 100vh;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="content" aria-label="Pemberitahuan isolir layanan internet">
+      <h1 class="title">PELANGGAN YANG TERHORMAT</h1>
+
+      <div class="icon" aria-hidden="true">🚫📶</div>
+
+      <p class="notice">
+        Kami informasikan layanan internet Anda saat ini
+        <span class="red">TERISOLIR</span>
+        otomatis oleh sistem billing kami.
+      </p>
+
+      <p class="message">
+        Mohon untuk segera melakukan pembayaran agar layanan dapat digunakan kembali.
+      </p>
+
+      <p class="help">
+        Jika mengalami kendala, silakan hubungi Sales, Agen, atau Admin/CS.
+      </p>
+
+      <footer class="footer">
+        Powered by GMJN
+        <span>Global Media Jaringan Nusantara</span>
+      </footer>
+    </section>
+  </main>
+</body>
+</html>
